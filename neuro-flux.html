@@ -6,9 +6,10 @@
 -->
 <html>
 	<head>
-		<title>Alexis' Portfolio</title>
+		<title>Neuro-FLux | Alexis Valencia Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Neuro-FLux: A Fully Flexible Wearable Continuous-wave Near-infrared Spectroscopy for Continuous Cerebral Hemodynamic Monitoring" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
@@ -28,10 +29,10 @@
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+								<li><a href="index.html#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+								<li><a href="index.html#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="index.html#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+								<li><a href="index.html#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
 
@@ -54,110 +55,149 @@
 		<!-- Main -->
 			<div id="main">
 
-				<!-- Intro -->
+				<!-- Project Hero -->
 					<section id="top" class="one dark cover">
 						<div class="container">
-
 							<header>
-								<h2 class="alt">
-									Neuro-FLux
-								</h2>
+								<h2 class="alt">Neuro-FLux</h2>
 								<p>
-									Computational biomedical engineer focused on embedded systems,
-									wearable devices, XR development, and interactive technologies.
+									A Fully Flexible Wearable CW-NIRS Device for Continuous Cerebral Hemodynamic Monitoring<br />
+									Master's Thesis Research • Carnegie Mellon University • Advisor: Dr. Jana Kainerstorfer
 								</p>
 							</header>
-
 							<footer>
-								<a href="#portfolio" class="button scrolly">View Projects</a>
+								<a href="#details" class="button scrolly">View Project Details</a>
 							</footer>
-
 						</div>
 					</section>
 
-					<!-- About Me -->
-					<section id="about" class="two">
+				<!-- Project Overview -->
+					<section id="overview" class="two">
 						<div class="container">
-
 							<header>
-								<h2>About Me</h2>
+								<h2>Project Overview</h2>
 							</header>
-
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-
-							<p>
-								I am a computational biomedical engineer focused on developing
-								interactive and human-centered technologies across embedded systems,
-								wearable ciomedical devices, XR development, and rapid prototyping.
-
-								My work combines hardware, software, and design to create systems
-								that bridge engineering and human interaction. Across research and
-								development projects, I have worked on wearable neural imaging devices,
-								augmented and virtual reality learning environments, biomedical
-								instrumentation, embedded firmware, and physiological signal processing.
-
-								I am particularly interested in building technologies that make complex
-								systems more intuitive, immersive, and accessible - especially in areas
-								such as biomedical devices, educational technology, and interactive
-								computing.
-							</p>
-
+							<div class="row">
+								<div class="col-6 col-12-mobile">
+									<h3>The Problem</h3>
+									<p>
+										Continuous monitoring of cerebral hemodynamics is critical for early detection of neurological conditions and personalized brain health assessment. Existing modalities—EEG and fMRI—are ill-suited for continuous, real-world use due to complexity, restricted mobility, and reliance on controlled environments. While continuous-wave near-infrared spectroscopy (CW-NIRS) offers a simpler alternative, wearable implementations struggle with maintaining signal quality and stable optical coupling during natural movement.
+									</p>
+									<h3>The Solution</h3>
+									<p>
+										Neuro-FLux is a flexible, wearable CW-NIRS system designed to improve both mechanical conformity and photon detection. The device integrates dual-wavelength LEDs, a large-area photodiode (LA-PD), and embedded acquisition electronics on a fully flexible PCB (~0.3 mm thick). This enables the device to conform to the curvature of the human head, maintaining consistent skin contact and stable optical coupling during motion—addressing the primary failure mode of prior wearable NIRS devices.
+									</p>
+								</div>
+								<div class="col-6 col-12-mobile">
+									<h3>Key Results</h3>
+									<ul class="alt">
+										<li><strong>SNR of 36.14 dB</strong> at heart-rate band—exceeding a commercial CW-NIRS system (Artinis MRK II, 34.49 dB) under similar conditions</li>
+										<li><strong>Stable 100 Hz operation</strong> with optimized acquisition parameters (8-sample averaging, 29.2 µs integration time)</li>
+										<li><strong>Qualitative agreement</strong> with FD-NIRS (ISS Imagent) during paced breathing and hyperventilation tasks</li>
+										<li><strong>Time-frequency analysis</strong> demonstrating real-time tracking of HR modulation during hyperventilation (0.5 Hz paced breathing)</li>
+										<li><strong>Fully flexible form factor</strong>: 56.6 × 24.4 mm, ~0.3 mm thick polyimide PCB with TPU enclosure and silicone skin interface</li>
+									</ul>
+									<h3>My Role</h3>
+									<p>
+										Lead hardware and firmware engineer for the 2-year Master's thesis project. Designed the flexible PCB (4-layer, impedance-controlled), developed embedded firmware for the STM32WB5MMG MCU with BLE, implemented the acquisition sequence and signal processing pipeline in MATLAB, conducted all experimental validation against commercial NIRS systems, and authored the thesis.
+									</p>
+								</div>
+							</div>
 						</div>
 					</section>
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="three">
+				<!-- Technical Details -->
+					<section id="details" class="three">
 						<div class="container">
-
 							<header>
-								<h2>Projects</h2>
+								<h2>Technical Details</h2>
 							</header>
-
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
 
 							<div class="row">
-								<div class="col-4 col-12-mobile">
+								<div class="col-6 col-12-mobile">
+									<h3>Hardware Architecture</h3>
+									<ul class="alt">
+										<li><strong>Flexible PCB</strong>: 4-layer polyimide, ~0.3 mm thick, patterned copper planes for flexibility and noise isolation</li>
+										<li><strong>Optical Sources</strong>: Dual-wavelength LEDs (735 nm / 850 nm, SMT735D/850D) in single package</li>
+										<li><strong>Source-Detector Distances</strong>: 10 mm (superficial), 27/32/37 mm (cortical)</li>
+										<li><strong>Large-Area Photodiode</strong>: PDB-C110 (Advanced Photonix), ~300 pF junction capacitance</li>
+										<li><strong>Analog Front End</strong>: MAX86171 (Analog Devices) with adjustable PD biasing for LA-PD stability</li>
+										<li><strong>MCU</strong>: STM32WB5MMG with integrated BLE for wireless operation</li>
+										<li><strong>Power</strong>: 3.7 V LiPo, 150 mAh, regulated 2.5 V VCC with separate LED/PD domains</li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-mobile">
+									<h3>Mechanical Design</h3>
+									<ul class="alt">
+										<li><strong>Enclosure</strong>: TPU 3D-printed case with designed weak points for bending</li>
+										<li><strong>Headband Interface</strong>: 25 mm elastic band slots with tightening mechanism</li>
+										<li><strong>Silicone Skin Interface</strong>: Molded compliant pad adapting to hair/skin contours, reducing air gaps</li>
+										<li><strong>Form Factor</strong>: 56.6 × 24.4 mm footprint, wearable as headband</li>
+									</ul>
+									<h3>Acquisition System</h3>
+									<ul class="alt">
+										<li><strong>Frame Rate</strong>: 100 Hz (10 ms/frame)</li>
+										<li><strong>Channels</strong>: 8 LED channels (2 wavelengths × 4 SD distances)</li>
+										<li><strong>Per-Channel</strong>: 8 samples averaged, 29.2 µs integration time</li>
+										<li><strong>Ambient Light Cancellation</strong>: Coarse analog + fine digital (pre/post LED exposure)</li>
+										<li><strong>Settling Time</strong>: 6.1 µs (optimized for timing stability)</li>
+										<li><strong>Frame Duration</strong>: ~5.7 ms active, remainder low-power</li>
+									</ul>
+								</div>
+							</div>
+
+							<hr class="major" />
+
+							<h3>Signal Processing Pipeline</h3>
+							<div class="row">
+								<div class="col-12">
+									<p>
+										Raw intensity → Ambient-corrected intensity → ΔOD via <code>ln(I/I₀)</code> → Δμₐ via Modified Beer-Lambert Law (MBLL) with literature DPF values → Linear system solve for Δ[HbO] and Δ[Hb] using extinction coefficients at 735/850 nm. Longest SD distance (37 mm) used for cerebral sensitivity.
+									</p>
+								</div>
+							</div>
+
+							<hr class="major" />
+
+							<h3>Figures</h3>
+
+							<div class="row">
+								<div class="col-6 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<a href="images/neuroflux_fig1_schematic.png" class="image fit"><img src="images/neuroflux_fig1_schematic.png" alt="Neuro-FLux schematic" /></a>
 										<header>
-											<h3>Ipsum Feugiat</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Rhoncus Semper</h3>
+											<h3>Figure 1: System Schematic</h3>
+											<p>Architecture showing MCU → AFE → LEDs/LA-PD signal flow. The MCU programs the AFE to control LED timing and read the LA-PD, then transmits data wirelessly for storage and analysis.</p>
 										</header>
 									</article>
 								</div>
-								<div class="col-4 col-12-mobile">
+								<div class="col-6 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<a href="images/neuroflux_fig3_sequence.png" class="image fit"><img src="images/neuroflux_fig3_sequence.png" alt="Acquisition sequence" /></a>
 										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
+											<h3>Figure 3: Frame-Based Acquisition</h3>
+											<p>Sequential 8-channel measurement per frame (10 ms). Alternating wavelengths (735/850 nm) progressing shortest to longest SD distance. Ambient samples interleaved for digital cancellation.</p>
 										</header>
 									</article>
 								</div>
-								<div class="col-4 col-12-mobile">
+							</div>
+
+							<div class="row">
+								<div class="col-6 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<a href="images/neuroflux_fig6_comparison.png" class="image fit"><img src="images/neuroflux_fig6_comparison.png" alt="ISS comparison" /></a>
 										<header>
-											<h3>Dolor Penatibus</h3>
+											<h3>Figure 6: Qualitative ISS Comparison</h3>
+											<p>Hemodynamic trends during hyperventilation (0.5 Hz paced breathing). Both Neuro-FLux (37 mm) and ISS Imagent (35 mm) show mirrored HbO/HbR responses—validating physiological signal capture.</p>
 										</header>
 									</article>
+								</div>
+								<div class="col-6 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<a href="images/neuroflux_fig8_spectrogram.png" class="image fit"><img src="images/neuroflux_fig8_spectrogram.png" alt="Spectrogram" /></a>
 										<header>
-											<h3>Orci Convallis</h3>
+											<h3>Figure 8: HR Modulation Spectrogram</h3>
+											<p>Time-frequency analysis of Δ[HbO] showing heart-rate frequency (red) increasing during hyperventilation and returning to baseline during rest. Demonstrates real-time cardiovascular dynamics tracking.</p>
 										</header>
 									</article>
 								</div>
@@ -166,32 +206,165 @@
 						</div>
 					</section>
 
-				<!-- Contact -->
+				<!-- Validation & Results -->
+					<section id="validation" class="four">
+						<div class="container">
+							<header>
+								<h2>Validation & Results</h2>
+							</header>
+							<div class="row">
+								<div class="col-6 col-12-mobile">
+									<h3>Experimental Protocol</h3>
+									<ul class="alt">
+										<li><strong>Session 1</strong>: Neuro-FLux vs. ISS Imagent (FD-NIRS) on forehead, bilateral placement</li>
+										<li><strong>Session 2</strong>: Neuro-FLux vs. Artinis MRK II (CW-NIRS), same protocol, separate day</li>
+										<li><strong>Tasks</strong>: 2-min rest → 3× paced breathing (0.3 Hz) → 3× hyperventilation (0.5 Hz)</li>
+										<li><strong>Analysis</strong>: Frequency-domain SNR at HR band (0.8–2 Hz); STFT spectrograms (30 s windows, 75% overlap)</li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-mobile">
+									<h3>Quantitative Results</h3>
+									<table>
+										<thead>
+											<tr>
+												<th>Device</th>
+												<th>SD Distance</th>
+												<th>SNR @ HR (dB)</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Neuro-FLux</td>
+												<td>37 mm</td>
+												<td><strong>36.14</strong></td>
+											</tr>
+											<tr>
+												<td>Artinis MRK II</td>
+												<td>38 mm</td>
+												<td>34.49</td>
+											</tr>
+										</tbody>
+									</table>
+									<p style="margin-top: 1rem;">
+										Neuro-FLux achieved <strong>comparable and slightly higher</strong> signal quality than a commercial CW-NIRS system, attributed to the LA-PD's enhanced photon collection at longer SD distances.
+									</p>
+								</div>
+							</div>
+
+							<hr class="major" />
+
+							<h3>Optimization Findings</h3>
+							<div class="row">
+								<div class="col-6 col-12-mobile">
+									<h4>Parameter Sweep Results</h4>
+									<ul class="alt">
+										<li>SNR increases with sample averaging and integration time</li>
+										<li>Degradation at max parameters (16 samples, 117 µs) due to frame timing violations</li>
+										<li>PD settling time (6.1 vs 18.1 µs) had no significant SNR impact</li>
+										<li>50 Hz vs 100 Hz: no substantial SNR difference</li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-mobile">
+									<h4>Power & Battery</h4>
+									<ul class="alt">
+										<li>50 Hz: 97.56 mAh/hr → ~1.5 hr battery life</li>
+										<li>100 Hz: 100.72 mAh/hr → ~1.5 hr battery life</li>
+										<li>Sampling rate has minimal impact on energy consumption</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- Discussion & Future Work -->
+					<section id="discussion" class="five">
+						<div class="container">
+							<header>
+								<h2>Discussion & Future Work</h2>
+							</header>
+							<div class="row">
+								<div class="col-6 col-12-mobile">
+									<h3>Significance</h3>
+									<p>
+										This work demonstrates that high-quality optical measurements are achievable in a compact, fully flexible form factor without sacrificing performance. By combining a flexible PCB, LA-PD, and embedded acquisition, Neuro-FLux addresses the key limitation of current wearable NIRS: the inability to conform comfortably to the head while maintaining robust signal quality in naturalistic environments.
+									</p>
+									<h3>Limitations</h3>
+									<ul class="alt">
+										<li>Single-participant validation limits generalizability</li>
+										<li>Separate-day comparisons with commercial devices introduce physiological variability</li>
+										<li>Intermittent LED failures from mechanical stress on flexible interconnects</li>
+										<li>Wired data collection used (BLE not yet implemented)</li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-mobile">
+									<h3>Future Directions</h3>
+									<ul class="alt">
+										<li><strong>Wireless BLE operation</strong> — complete the wireless data transmission path</li>
+										<li><strong>Power optimization</strong> — adaptive sampling, deeper AFE feature utilization for extended battery life</li>
+										<li><strong>Multi-modal sensing</strong> — integrate accelerometers for motion artifact rejection; EEG electrodes for fusion</li>
+										<li><strong>PCB refinement</strong> — improve interconnect durability under repeated bending</li>
+										<li><strong>Expanded validation</strong> — diverse participants, hair-covered regions, ambulatory conditions</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- Tech Stack -->
+					<section id="tech-stack" class="six">
+						<div class="container">
+							<header>
+								<h2>Technologies & Skills</h2>
+							</header>
+							<div class="row">
+								<div class="col-4 col-6 col-12-mobile">
+									<h4>Hardware & Embedded</h4>
+									<ul class="alt">
+										<li>Flexible PCB design (4-layer, Altium/KiCad)</li>
+										<li>STM32 firmware (C, HAL, FreeRTOS)</li>
+										<li>BLE wireless communication</li>
+										<li>SPI/I2C peripheral interfacing</li>
+										<li>Analog front-end configuration (MAX86171)</li>
+									</ul>
+								</div>
+								<div class="col-4 col-6 col-12-mobile">
+									<h4>Signal Processing</h4>
+									<ul class="alt">
+										<li>MATLAB (offline processing pipeline)</li>
+										<li>Modified Beer-Lambert Law</li>
+										<li>Frequency-domain SNR analysis</li>
+										<li>STFT spectrograms & ridge detection</li>
+										<li>FFT-based heart-rate extraction</li>
+									</ul>
+								</div>
+								<div class="col-4 col-6 col-12-mobile">
+									<h4>Mechanical & Fabrication</h4>
+									<ul class="alt">
+										<li>TPU 3D printing (enclosure)</li>
+										<li>Silicone molding (skin interface)</li>
+										<li>Fusion 360 CAD</li>
+										<li>Flexible PCB fabrication & assembly</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- Navigation -->
 					<section id="contact" class="four">
 						<div class="container">
-
 							<header>
-								<h2>Contact</h2>
+								<h2>Explore More</h2>
 							</header>
-
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
+							<div class="row">
+								<div class="col-6 col-12-mobile">
+									<a href="index.html" class="button primary large">← Back to Portfolio</a>
 								</div>
-							</form>
-
+								<div class="col-6 col-12-mobile">
+									<a href="OCTAVE.html" class="button large">View OCTAVE Project →</a>
+								</div>
+							</div>
 						</div>
 					</section>
 
@@ -199,12 +372,9 @@
 
 		<!-- Footer -->
 			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
+				<ul class="copyright">
+					<li>&copy; Alexis Valencia. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
 			</div>
 
 		<!-- Scripts -->

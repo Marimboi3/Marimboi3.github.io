@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>VR / AR & Encryption Machines | Alexis Valencia Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Interactive VR history machines — a 1:1 Enigma cipher machine and an arcade-style Cipher machine — built with Unity and 3D models I designed." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- model-viewer: interactive 3D in the browser -->
+		<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+		<style>
+			model-viewer {
+				width: 100%;
+				height: 380px;
+				background: #1a1a1f;
+				border-radius: 6px;
+				--poster-color: transparent;
+			}
+			.model-caption { font-size: 0.85em; color: #888; margin-top: 0.5rem; text-align: center; }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Alexis Valencia</h1>
+							<p>Biomedical & Interactive Systems</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+								<li><a href="index.html#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="index.html#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+								<li><a href="index.html#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon solid fa-user"><span class="label">Resume</span></a></li>
+							<li><a href="https://github.com/Marimboi3" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/valenco-alexis/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Hero -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+							<header>
+								<h2 class="alt">VR / AR &amp; Interactive History</h2>
+								<p>
+									Hands-on, virtual cipher machines you can operate in VR<br />
+									Built with Unity &bull; 3D models and encryption logic by me
+								</p>
+							</header>
+							<footer>
+								<a href="#enigma" class="button scrolly">Explore the Machines</a>
+							</footer>
+						</div>
+					</section>
+
+				<!-- Overview -->
+					<section id="overview" class="two">
+						<div class="container">
+							<header>
+								<h2>What This Is</h2>
+							</header>
+							<p>
+								A pair of fully interactive, virtual cipher machines I built for an undergraduate XR job. Both run
+								in VR and on desktop: you physically turn the rotors, set the plugboard, and watch the machine
+								encrypt or decrypt a message in real time. The goal was to make historical cryptography tangible —
+								something you operate, not just read about. I designed the 3D models and wrote the virtual
+								encryption/decryption algorithms that drive both machines.
+							</p>
+							<div class="row">
+								<div class="col-6 col-12-mobile">
+									<h3>My Role</h3>
+									<p>
+										I owned the 3D modeling (the machines you can spin below) and the virtual cipher logic for
+										both the Enigma and the arcade-style Cipher machine. The Unity project was a team effort;
+										my contributions were the geometry and the encryption/decryption behavior.
+									</p>
+								</div>
+								<div class="col-6 col-12-mobile">
+									<h3>Why I'm Proud of It</h3>
+									<p>
+										It's the blend I love: accurate mechanical design plus working software. The models load
+										right here on the page — drag to rotate, scroll to zoom — so you can inspect the real
+										geometry, not just a screenshot.
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- Enigma machine -->
+					<section id="enigma" class="three">
+						<div class="container">
+							<header>
+								<h2>Enigma Machine (1:1)</h2>
+							</header>
+							<p>
+								A faithful, life-size virtual replica of the WWII German Enigma. Set the rotors and plugboard and it
+								encodes/decodes messages using the real historical stepping and wiring logic.
+							</p>
+							<model-viewer
+								src="assets/models/enigma_machine.glb"
+								alt="3D model of the Enigma machine"
+								camera-controls auto-rotate
+								shadow-intensity="1"
+								exposure="1.1"
+								environment-image="neutral"
+								poster="images/fusion360/Enigma Machine.png">
+								<img src="images/fusion360/Enigma Machine.png" alt="Enigma machine render" slot="poster" />
+							</model-viewer>
+							<p class="model-caption">Drag to rotate &bull; scroll to zoom &bull; the actual Enigma model from the Unity project</p>
+
+							<div class="row" style="margin-top:1.5rem;">
+								<div class="col-6 col-12-mobile">
+									<article class="item">
+										<a href="images/fusion360/Enigma Machine.png" class="image fit"><img src="images/fusion360/Enigma Machine.png" alt="Enigma machine render" /></a>
+										<header><h3>Enigma &mdash; Full View</h3></header>
+									</article>
+								</div>
+								<div class="col-6 col-12-mobile">
+									<article class="item">
+										<a href="images/fusion360/Enigma Machine Top.png" class="image fit"><img src="images/fusion360/Enigma Machine Top.png" alt="Enigma top view" /></a>
+										<header><h3>Enigma &mdash; Top</h3></header>
+									</article>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- Cipher machine -->
+					<section id="cipher" class="two">
+						<div class="container">
+							<header>
+								<h2>Arcade-Style Cipher Machine</h2>
+							</header>
+							<p>
+								A second, game-inspired encryption machine with its own virtual cipher algorithm and control board —
+								built in the same interactive style. A more playful take on the same "operate it yourself" idea.
+							</p>
+							<model-viewer
+								src="assets/models/cipher_machine_v2.glb"
+								alt="3D model of the arcade-style cipher machine"
+								camera-controls auto-rotate
+								shadow-intensity="1"
+								exposure="1.1"
+								environment-image="neutral"
+								poster="images/fusion360/Cipher Machine.png">
+								<img src="images/fusion360/Cipher Machine.png" alt="Cipher machine render" slot="poster" />
+							</model-viewer>
+							<p class="model-caption">Drag to rotate &bull; scroll to zoom &bull; the actual Cipher Machine V2 model</p>
+
+							<div class="row" style="margin-top:1.5rem;">
+								<div class="col-6 col-12-mobile">
+									<article class="item">
+										<a href="images/fusion360/Cipher Machine.png" class="image fit"><img src="images/fusion360/Cipher Machine.png" alt="Cipher machine render" /></a>
+										<header><h3>Cipher Machine</h3></header>
+									</article>
+								</div>
+								<div class="col-6 col-12-mobile">
+									<article class="item">
+										<a href="images/fusion360/Cipher Machine Control Board.png" class="image fit"><img src="images/fusion360/Cipher Machine Control Board.png" alt="Cipher control board" /></a>
+										<header><h3>Control Board</h3></header>
+									</article>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- Tech stack -->
+					<section id="tech-stack" class="three">
+						<div class="container">
+							<header>
+								<h2>Skills & Tools</h2>
+							</header>
+							<div class="row">
+								<div class="col-4 col-6 col-12-mobile">
+									<h4>3D & XR</h4>
+									<ul class="alt">
+										<li>Unity (VR + desktop)</li>
+										<li>3D modeling for real-time</li>
+										<li>Model optimization</li>
+										<li>Interaction design</li>
+									</ul>
+								</div>
+								<div class="col-4 col-6 col-12-mobile">
+									<h4>Logic & Software</h4>
+									<ul class="alt">
+										<li>Enigma stepping &amp; wiring</li>
+										<li>Cipher algorithm (virtual)</li>
+										<li>C# scripting</li>
+										<li>Real-time encrypt/decrypt</li>
+									</ul>
+								</div>
+								<div class="col-4 col-6 col-12-mobile">
+									<h4>Design</h4>
+									<ul class="alt">
+										<li>Mechanical modeling</li>
+										<li>Materials &amp; lighting</li>
+										<li>UI / control board</li>
+										<li>Historical accuracy</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- Navigation -->
+					<section id="contact" class="four">
+						<div class="container">
+							<header>
+								<h2>Explore More</h2>
+							</header>
+							<div class="row">
+								<div class="col-6 col-12-mobile">
+									<a href="fusion360.html" class="button large">View CAD Designs &rarr;</a>
+								</div>
+								<div class="col-6 col-12-mobile">
+									<a href="index.html" class="button primary large">Back to Portfolio &rarr;</a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				<ul class="copyright">
+					<li>&copy; Alexis Valencia. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

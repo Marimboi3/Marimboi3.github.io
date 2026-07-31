@@ -9,7 +9,7 @@
 		<title>OCTAVE | Alexis Valencia Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="OCTAVE: Optical Coherence Tomography and Vibrometry Endoscope for Conductive Hearing Loss Diagnostics — NIH DEBUT Challenge 2nd Place Winner" />
+		<meta name="description" content="OCTAVE: a handheld OCT and vibrometry endoscope for diagnosing conductive hearing loss — NIH DEBUT Challenge 2nd Place." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
@@ -61,111 +61,87 @@
 							<header>
 								<h2 class="alt">OCTAVE</h2>
 								<p>
-									Optical Coherence Tomography & Vibrometry Endoscope for Conductive Hearing Loss Diagnostics<br />
-									NIH DEBUT Challenge <strong>2nd Place Winner</strong> • UC Riverside Senior Design • Advisors: Dr. H. Park, Dr. W. Dong
+									A handheld scanner that sees and measures the middle ear to diagnose hearing loss<br />
+									NIH DEBUT Challenge <strong>2nd Place Winner</strong> &bull; UC Riverside Senior Design &bull; Dr. H. Park, Dr. W. Dong
 								</p>
 							</header>
 							<footer>
-								<a href="#details" class="button scrolly">View Project Details</a>
+								<a href="#overview" class="button scrolly">Read the Story</a>
 							</footer>
 						</div>
 					</section>
 
-				<!-- Project Overview -->
+				<!-- Overview -->
 					<section id="overview" class="two">
 						<div class="container">
 							<header>
-								<h2>Project Overview</h2>
+								<h2>What It Is</h2>
 							</header>
+							<p>
+								Conductive hearing loss affects tens of millions of people, but doctors have no good tool to see
+								<em>what</em> inside the ear is actually broken. OCTAVE is a handheld probe that combines two jobs:
+								high-resolution imaging of the middle-ear structures and measurement of how the tiny ear bones
+								vibrate in response to sound. That lets a clinician pinpoint the problem in one visit, without
+								exploratory surgery.
+							</p>
+
 							<div class="row">
 								<div class="col-6 col-12-mobile">
-									<h3>The Problem</h3>
+									<h3>How It Works</h3>
 									<p>
-										Conductive hearing loss (CHL) affects ~70 million people globally. Current diagnostics are fundamentally limited: otoscopy cannot visualize past the tympanic membrane; CT/MRI lack the spatial resolution (~0.5–0.625 mm) to resolve middle-ear structures and expose patients to ionizing radiation; exploratory surgery is invasive; and audiometry provides only subjective functional data without identifying which specific structure in the sound conduction pathway is compromised. No existing tool combines high-resolution structural imaging with quantitative functional vibrometry in a clinically practical form factor.
-									</p>
-									<h3>The Solution</h3>
-									<p>
-										OCTAVE is a handheld OCT and vibrometry endoscope for the external auditory meatus (EAM). It uses a 1310 nm swept-source OCT system (11 µm axial resolution, 2 mm imaging window) combined with Doppler vibrometry to simultaneously image middle-ear anatomy and quantify ossicular vibration in response to sound stimuli—all in a ~0.6 kg, 308 × 98 × 72 mm probe. The device integrates a Michelson interferometer with a MEMS mirror for lateral scanning, a compound linear stage for independent probe-depth and imaging-window adjustment, miniaturized SLA-printed optomechanical mounts, and a custom Windows software suite with real-time OCT/fiberscope visualization, photo/video capture, and vibrometry study controls.
+										A 1310 nm light source feeds a Michelson interferometer (the OCT engine) miniaturized into a
+										~0.6 kg probe. A MEMS mirror scans the beam; a GRIN lens focuses it through a standard
+										otoscope tip. Doppler vibrometry measures ear-bone motion, and a built-in fiberscope shows
+										the doctor where they're aiming — all through a custom real-time software interface.
 									</p>
 								</div>
 								<div class="col-6 col-12-mobile">
-									<h3>Key Achievements</h3>
-									<ul class="alt">
-										<li><strong>NIH DEBUT Challenge 2nd Place</strong> — nationally recognized undergraduate biomedical engineering innovation</li>
-										<li><strong>49.9% optical throughput</strong> after alignment (broadband 1310 nm SLD)</li>
-										<li><strong>Sub-degree optomechanical precision</strong> — SLA-printed mounts with <1° warping, ±50 µm positional tolerance</li>
-										<li><strong>Real-time clinical software</strong> — dual-window GUI (imaging + vibrometry) on 400×800 LCD + 1920×1080 monitor</li>
-										<li><strong>Validated on human ear</strong> — tympanic membrane visualization, OCT fingertip imaging (3-layer skin structure resolved)</li>
-										<li><strong>Patentable innovations</strong> — miniaturized optomechanics, integrated compound stage, alignment tools</li>
-									</ul>
 									<h3>My Role</h3>
 									<p>
-										<strong>Lead optomechanical designer</strong> on a 5-person team. Designed and manufactured the miniaturized optomechanical mounts (clamps, bases, silicone insulators) for all optical components (collimator, beam splitter, gold mirrors, MEMS mirror, doublet lenses, GRIN lenses). Engineered the compound two-tier linear stage system (main stage with rack-and-gear actuation + reference arm fine-adjustment stage). Designed the front assembly: otoscope head compatible with Welch Allyn disposable specula, integrated microphone/speaker unit for vibrometry, and GRIN lens protection channel. Performed ImageJ warping analysis to optimize SLA print parameters. Contributed to optical alignment verification (power meter measurements) and case integration.
+										<strong>Lead optomechanical designer</strong> on a 5-person team. I designed and 3D-printed the
+										miniaturized mounts for every optical part, engineered the two-stage adjustable probe, and built
+										the front "patient interface" that makes it safe and usable in a real ear. I also tuned the
+										SLA printing to hit sub-degree accuracy and verified optical alignment.
 									</p>
 								</div>
 							</div>
+
+							<hr class="major" />
+
+							<h3>Key Achievements</h3>
+							<div class="row">
+								<div class="col-6 col-12-mobile">
+									<ul class="alt">
+										<li><strong>NIH DEBUT Challenge 2nd Place</strong> — nationally recognized undergraduate biomedical innovation</li>
+										<li><strong>49.9% optical throughput</strong> after alignment (broadband 1310 nm source)</li>
+										<li>SLA-printed mounts with <strong>&lt;1&deg; warping</strong>, &plusmn;50 &micro;m positional tolerance</li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-mobile">
+									<ul class="alt">
+										<li>Real-time dual-window software: live OCT imaging + vibrometry controls</li>
+										<li>Validated on a human ear — visualizing the eardrum and resolving skin layers on a fingertip test</li>
+										<li>Patentable optomechanics: a fraction of the cost of commercial lab mounts</li>
+									</ul>
+								</div>
+							</div>
+
 						</div>
 					</section>
 
-				<!-- Technical Details -->
-					<section id="details" class="three">
+				<!-- Figures -->
+					<section id="figures" class="three">
 						<div class="container">
 							<header>
-								<h2>Technical Details</h2>
+								<h2>Visuals</h2>
 							</header>
-
-							<div class="row">
-								<div class="col-6 col-12-mobile">
-									<h3>Optical System</h3>
-									<ul class="alt">
-										<li><strong>Laser Source</strong>: 1310 nm SLD (superluminescent diode), broadband</li>
-										<li><strong>Configuration</strong>: Michelson interferometer (collimator → beam splitter → reference/sample arms)</li>
-										<li><strong>Reference Arm</strong>: Gold-plated mirror on fine-adjustment stage (80 µm/rotation)</li>
-										<li><strong>Sample Arm</strong>: MEMS mirror (2-axis scanning) → 2× achromatic doublets → GRIN lens (10 cm, 2.3 mm Ø)</li>
-										<li><strong>Resolution</strong>: 11 µm axial, 2 mm imaging window</li>
-										<li><strong>Throughput</strong>: 49.9% of input intensity after alignment</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-mobile">
-									<h3>Mechanical Architecture</h3>
-									<ul class="alt">
-										<li><strong>Probe Dimensions</strong>: 308 mm L × 98 mm W × 72 mm H (extended: 270 mm)</li>
-										<li><strong>Weight</strong>: ~0.6 kg (probe only)</li>
-										<li><strong>Compound Stage</strong>: Two-tier linear dovetail system</li>
-										<li style="list-style: none; padding-left: 1.5em;">• Main stage: rack & gear actuation, 2–6 cm probe depth, manual brake</li>
-										<li style="list-style: none; padding-left: 1.5em;">• Reference stage: fine-adjustment screw, 80 µm/turn, 5° max angular range</li>
-										<li><strong>Optomechanical Mounts</strong>: SLA 3D printed (50 µm resolution), 3-part design (clamp + base + 3× silicone insulators)</li>
-										<li><strong>Angular Adjustment</strong>: ~1.7°/turn per screw, 5° total per component</li>
-										<li><strong>Case</strong>: Acrylic panels (2 mm & 4 mm), articulated arm mounting</li>
-									</ul>
-								</div>
-							</div>
-
-							<hr class="major" />
-
-							<h3>Front Assembly & Patient Interface</h3>
-							<div class="row">
-								<div class="col-12">
-									<ul class="alt">
-										<li><strong>Otoscope Head</strong>: Compatible with Welch Allyn disposable specula — protects patient (GRIN lens cannot contact EAM) and protects delicate GRIN lens</li>
-										<li><strong>Fiberscope Integration</strong>: Co-axial with GRIN lens for direct EAM visualization during insertion/positioning</li>
-										<li><strong>Speaker/Microphone Unit (SMU)</strong>: Simultaneously induces TM/middle-ear vibration and measures sound pressure in EAM for vibrometry</li>
-										<li><strong>Visible Alignment Laser</strong>: Superimposed on 1310 nm imaging laser for scan positioning (IR invisible to user)</li>
-									</ul>
-								</div>
-							</div>
-
-							<hr class="major" />
-
-							<h3>Figures</h3>
-
 							<div class="row">
 								<div class="col-6 col-12-mobile">
 									<article class="item">
 										<a href="images/octave_fig1_model.png" class="image fit"><img src="images/octave_fig1_model.png" alt="OCTAVE complete CAD model" /></a>
 										<header>
-											<h3>Figure 1: Complete CAD Assembly</h3>
-											<p>Full probe CAD model showing integrated optical layout, compound stage, front assembly, and case. Overall dimensions: 270 mm length (extended), 98 mm width, 74 mm height. The result of collaborative design across 5 team members.</p>
+											<h3>Complete CAD Assembly</h3>
+											<p>Full probe: integrated optics, adjustable stage, front assembly, and case — the result of team-wide design.</p>
 										</header>
 									</article>
 								</div>
@@ -173,20 +149,19 @@
 									<article class="item">
 										<a href="images/octave_fig3_optomech.png" class="image fit"><img src="images/octave_fig3_optomech.png" alt="Optomechanical components" /></a>
 										<header>
-											<h3>Figure 3: Miniaturized Optomechanics (My Design)</h3>
-											<p>Exploded view of the clamp–insulator–base system for each optic. SLA-printed at 50 µm resolution with three silicone insulators enabling x/y rotation for alignment. Designed to tolerate <1° print warping and ±50 µm positional variation.</p>
+											<h3>Miniaturized Optomechanics (My Design)</h3>
+											<p>Clamp–insulator–base system for each optic, SLA-printed for fine alignment on the cheap.</p>
 										</header>
 									</article>
 								</div>
 							</div>
-
 							<div class="row">
 								<div class="col-6 col-12-mobile">
 									<article class="item">
 										<a href="images/octave_fig13_handheld.png" class="image fit"><img src="images/octave_fig13_handheld.png" alt="Handheld assembly" /></a>
 										<header>
-											<h3>Figure 13: Stage & Case in Handheld Position</h3>
-											<p>Complete probe with case built around aligned optical stages. Left case wall houses linear adjustment knobs and stage locks. Demonstrates clinical form factor: articulating arm mountable, one-handed operation.</p>
+											<h3>Handheld Probe</h3>
+											<p>The aligned optical stages inside a case with adjustment knobs — one-handed, clinic-ready.</p>
 										</header>
 									</article>
 								</div>
@@ -194,110 +169,10 @@
 									<article class="item">
 										<a href="images/octave_fig16_octdetail.png" class="image fit"><img src="images/octave_fig16_octdetail.png" alt="OCT fingertip image" /></a>
 										<header>
-											<h3>Figure 16: OCT Fingertip Validation</h3>
-											<p>Composite B-scan (two 2D slices, 1 mm × 2 mm per scan). Resolves three skin layers: epidermis, dermis (sweat duct visible), and hypodermis. Confirms optomechanics, compound stage, optical layout, and MEMS mirror function as an integrated system.</p>
+											<h3>OCT Imaging Result</h3>
+											<p>Resolves three skin layers on a fingertip — proof the whole optical system works as one.</p>
 										</header>
 									</article>
-								</div>
-							</div>
-
-						</div>
-					</section>
-
-				<!-- Software Suite -->
-					<section id="software" class="four">
-						<div class="container">
-							<header>
-								<h2>Software Suite</h2>
-							</header>
-							<div class="row">
-								<div class="col-6 col-12-mobile">
-									<h3>Custom Windows GUI</h3>
-									<ul class="alt">
-										<li><strong>Dual Display</strong>: 1920×1080 monitor + 400×800 touchscreen LCD</li>
-										<li><strong>Patient Database</strong>: Input/submit patient data (name, DOB, gender); auto-creates per-patient folders for all OCT/vibrometry data</li>
-										<li><strong>Imaging Window</strong>: Simultaneous OCT B-scan + live fiberscope feed; photo capture; video recording</li>
-										<li><strong>Vibrometry Window</strong>: Real-time Doppler vibrometry analysis; "Conduct Study" button for automated measurement sequences</li>
-										<li><strong>Navigation</strong>: Seamless switching between windows; logo-button exit on LCD</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-mobile">
-									<h3>Validated Workflows</h3>
-									<ul class="alt">
-										<li>Human ear test: TM visualization with visible laser focused on umbo</li>
-										<li>Photo capture → saved to patient folder</li>
-										<li>Video recording → saved to patient folder</li>
-										<li>Window navigation (imaging ↔ vibrometry) on touchscreen</li>
-										<li>MEMS scanning verification (video documented)</li>
-										<li>Optical alignment verification via power meter (video documented)</li>
-										<li>Main stage linear motion validation (video documented)</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</section>
-
-				<!-- Regulatory & Market -->
-					<section id="regulatory" class="five">
-						<div class="container">
-							<header>
-								<h2>Regulatory Pathway & Market Analysis</h2>
-							</header>
-							<div class="row">
-								<div class="col-6 col-12-mobile">
-									<h3>FDA Classification</h3>
-									<ul class="alt">
-										<li><strong>Class II</strong> medical device (diagnostic imaging)</li>
-										<li>Predicate: OCT middle-ear device (2020, regulation 892.1560, Product Code QJG)</li>
-										<li>510(k) pathway planned — substantial equivalence to predicate</li>
-										<li>Subject to Quality System Regulations (GMP not exempt)</li>
-									</ul>
-									<h3>Reimbursement</h3>
-									<ul class="alt">
-										<li>Imaging/vibrometry services reimbursable (Medicare "medically necessary")</li>
-										<li>Device purchase not directly reimbursable (hospital capital equipment)</li>
-										<li>Strategy: target research institutions first to build clinical evidence</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-mobile">
-									<h3>Market Estimates</h3>
-									<ul class="alt">
-										<li><strong>TAM/SAM</strong>: 8,161 US hospitals, clinics, ASCs with ENT services</li>
-										<li><strong>SOM</strong>: 2,321 VA medical centers, clinics, ASCs (elderly population focus)</li>
-										<li><strong>Probe BOM</strong>: ~$3,700 (optics + structure + hardware)</li>
-										<li><strong>Full Kit Cost</strong>: ~$140,700 (incl. base unit, DAQ, fiberscope)</li>
-										<li><strong>Sale Price</strong>: $230,000/kit → $61,720 net profit (26.8% margin)</li>
-										<li><strong>5-Year Projection</strong>: 93 VA centers by Year 5</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</section>
-
-				<!-- Intellectual Property -->
-					<section id="ip" class="six">
-						<div class="container">
-							<header>
-								<h2>Intellectual Property & Novelty</h2>
-							</header>
-							<div class="row">
-								<div class="col-6 col-12-mobile">
-									<h3>Patent Landscape</h3>
-									<ul class="alt">
-										<li>USPTO search: US 2017/0251924 A1 (Doppler OCT middle ear) — closest prior art</li>
-										<li>Competing approaches: achromatic lens (multi-element), split fiber-coupled units</li>
-										<li>OCTAVE differentiators: GRIN lens (single-element chromatic correction, compact), all-optics-in-one-unit (no fiber noise)</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-mobile">
-									<h3>Novel Claims</h3>
-									<ul class="alt">
-										<li>Miniaturized SLA optomechanical system (low-cost, lightweight, impact-resistant)</li>
-										<li>Integrated compound stage with independent main/reference adjustment</li>
-										<li>Custom alignment plates & component test benches (QA methodology)</li>
-										<li>Unified software GUI: simultaneous OCT + fiberscope + vibrometry on touchscreen</li>
-										<li>Design patent eligible: custom visual language (logos, icons, layout)</li>
-									</ul>
 								</div>
 							</div>
 						</div>
@@ -307,35 +182,34 @@
 					<section id="tech-stack" class="two">
 						<div class="container">
 							<header>
-								<h2>Technologies & Skills</h2>
+								<h2>Skills & Tools</h2>
 							</header>
 							<div class="row">
 								<div class="col-4 col-6 col-12-mobile">
 									<h4>Optomechanical Design</h4>
 									<ul class="alt">
-										<li>Fusion 360 CAD (assembly, tolerancing)</li>
-										<li>SLA 3D printing (50 µm resolution)</li>
-										<li>Optical mount design (clamp/insulator/base)</li>
-										<li>Compound linear stage (dovetail, rack & gear)</li>
-										<li>ImageJ warping analysis for print optimization</li>
+										<li>Fusion 360 CAD</li>
+										<li>SLA 3D printing (50 &micro;m)</li>
+										<li>Optical mount design</li>
+										<li>Compound linear stage</li>
 									</ul>
 								</div>
 								<div class="col-4 col-6 col-12-mobile">
 									<h4>Optical Engineering</h4>
 									<ul class="alt">
-										<li>Michelson interferometer alignment</li>
-										<li>GRIN lens & MEMS mirror integration</li>
-										<li>Power meter characterization (49.9% throughput)</li>
-										<li>Beam path optimization (reference/sample arms)</li>
+										<li>Michelson interferometer</li>
+										<li>GRIN lens &amp; MEMS mirror</li>
+										<li>Power-meter alignment</li>
+										<li>Beam-path optimization</li>
 									</ul>
 								</div>
 								<div class="col-4 col-6 col-12-mobile">
 									<h4>Software & Systems</h4>
 									<ul class="alt">
-										<li>Windows GUI development (real-time imaging)</li>
-										<li>Multi-display synchronization</li>
+										<li>Real-time Windows GUI</li>
+										<li>Multi-display sync</li>
 										<li>Patient data management</li>
-										<li>Video/photo capture pipeline</li>
+										<li>Photo/video capture</li>
 									</ul>
 								</div>
 							</div>
@@ -350,10 +224,10 @@
 							</header>
 							<div class="row">
 								<div class="col-6 col-12-mobile">
-									<a href="neuro-flux.html" class="button large">← View Neuro-FLux Project</a>
+									<a href="neuro-flux.html" class="button large">&larr; View Neuro-FLux Project</a>
 								</div>
 								<div class="col-6 col-12-mobile">
-									<a href="index.html" class="button primary large">Back to Portfolio →</a>
+									<a href="index.html" class="button primary large">Back to Portfolio &rarr;</a>
 								</div>
 							</div>
 						</div>

@@ -61,8 +61,8 @@
 							<header>
 								<h2 class="alt">Neuro-FLux</h2>
 								<p>
-									A fully flexible, wearable brain-imaging device that tracks cerebral blood flow in real time<br />
-									Master's Thesis Research &bull; Carnegie Mellon University &bull; Advisor: Dr. Jana Kainerstorfer
+									A fully flexible, wearable brain-monitoring device that tracks cerebral blood flow in real time<br />
+									&bull; Master's Thesis Research &bull; Carnegie Mellon University &bull; Advisor: Dr. Jana Kainerstorfer
 								</p>
 							</header>
 							<footer>
@@ -78,10 +78,10 @@
 								<h2>What It Is</h2>
 							</header>
 							<p>
-								Neuro-FLux is a wearable near-infrared device that measures blood oxygenation and flow in the
-								brain continuously, outside the lab. Existing tools (EEG, fMRI) can't do this in everyday life,
+								Neuro-FLux is a wearable near-infrared spectroscopy (NIRS) device that measures blood oxygenation and flow in the
+								brain continuously. Existing tools (EEG, fMRI) can't do this in everyday life,
 								and earlier wearables lost signal the moment the wearer moved. Neuro-FLux solves that by putting
-								the optics on an ultra-thin flexible circuit board that bends to the shape of the head, keeping
+								the optics on an ultra-thin flexible printed circuit board (PCB) that bends to the shape of the head, keeping
 								firm skin contact and clean optical coupling even during motion.
 							</p>
 
@@ -98,7 +98,7 @@
 									<h3>My Role</h3>
 									<p>
 										Lead hardware and firmware engineer across the 2-year thesis. I designed the flexible PCB,
-										wrote the embedded firmware for the STM32 microcontroller, built the signal-processing pipeline
+										wrote the embedded firmware for the STM32 microcontroller (MCU), built the signal-processing pipeline
 										in MATLAB, ran all validation against commercial systems, and authored the thesis.
 									</p>
 								</div>
@@ -131,15 +131,15 @@
 					<section id="figures" class="three">
 						<div class="container">
 							<header>
-								<h2>Visuals</h2>
+								<h2>Figures</h2>
 							</header>
 							<div class="row">
 								<div class="col-6 col-12-mobile">
 									<article class="item">
 										<a href="images/neuroflux_fig1_schematic.png" class="image fit"><img src="images/neuroflux_fig1_schematic.png" alt="Neuro-FLux schematic" /></a>
 										<header>
-											<h3>System Schematic</h3>
-											<p>MCU &rarr; analog front end &rarr; LEDs and photodiode, transmitting data wirelessly for analysis.</p>
+											<h3>Simplified System Schematic</h3>
+											<p>MCU &rarr; analog front end (AFE) &rarr; LEDs and large-area photodiode (LA-PD), transmitting data wirelessly for analysis.</p>
 										</header>
 									</article>
 								</div>
@@ -148,7 +148,7 @@
 										<a href="images/neuroflux_fig3_sequence.png" class="image fit"><img src="images/neuroflux_fig3_sequence.png" alt="Acquisition sequence" /></a>
 										<header>
 											<h3>Acquisition Sequence</h3>
-											<p>Eight channels sampled each 10 ms frame; ambient light cancelled digitally between samples.</p>
+											<p>Eight channels sampled each 10 ms frame; ambient light samples for digital correction.</p>
 										</header>
 									</article>
 								</div>
@@ -158,8 +158,8 @@
 									<article class="item">
 										<a href="images/neuroflux_fig6_comparison.png" class="image fit"><img src="images/neuroflux_fig6_comparison.png" alt="ISS comparison" /></a>
 										<header>
-											<h3>Validated vs. Clinical Reference</h3>
-											<p>Mirrored hemoglobin responses vs. a commercial FD-NIRS system during hyperventilation — confirming the signal is real.</p>
+											<h3>Neuro-FLux vs. Laboratory Reference</h3>
+											<p>Developed device's hemodynamic responses vs. a commercial FD-NIRS system during hyperventilation — confirming the signal up to industry standard.</p>
 										</header>
 									</article>
 								</div>
@@ -195,7 +195,7 @@
 								<div class="col-4 col-6 col-12-mobile">
 									<h4>Signal Processing</h4>
 									<ul class="alt">
-										<li>MATLAB pipeline</li>
+										<li>MATLAB (Object-oriented) pipeline</li>
 										<li>Modified Beer-Lambert Law</li>
 										<li>SNR &amp; spectrogram analysis</li>
 										<li>Heart-rate extraction</li>
@@ -204,10 +204,10 @@
 								<div class="col-4 col-6 col-12-mobile">
 									<h4>Mechanical & Fabrication</h4>
 									<ul class="alt">
-										<li>TPU 3D printing</li>
-										<li>Silicone molding</li>
 										<li>Fusion 360 CAD</li>
 										<li>Flexible PCB assembly</li>
+										<li>TPU 3D printing</li>
+										<li>Silicone molding</li>
 									</ul>
 								</div>
 							</div>

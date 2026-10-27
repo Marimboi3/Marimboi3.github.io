@@ -43,7 +43,7 @@
 				}
 			})
 			.catch(function () {
-				show('Something went wrong. Please email me directly at alexisv@andrew.cmu.edu.', 'err');
+				show('Something went wrong. Please try again in a moment, or message me on LinkedIn.', 'err');
 			})
 			.then(function () { button.disabled = false; });
 	});

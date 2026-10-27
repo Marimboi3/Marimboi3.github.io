@@ -1,0 +1,8 @@
+# GitHub Pages settings: keep private working notes and source files off the public website.
+# (They still live in the repository; this only stops them being served at marimboi3.github.io.)
+exclude:
+  - "*.md"
+  - template.html
+  - README.txt
+  - "assets/sass"
+  - "assets/models/*.obj"

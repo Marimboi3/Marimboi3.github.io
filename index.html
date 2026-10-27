@@ -4,12 +4,22 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
-		<title>Alexis' Portfolio</title>
+		<title>Alexis Valencia | Biomedical &amp; Embedded Systems Engineer</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Alexis Valencia: biomedical engineer (M.S. Carnegie Mellon, 2026) who builds wearable sensing hardware end to end, from flexible PCBs and STM32 firmware to signal processing. Seeking full-time roles from January 2027." />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Alexis Valencia | Biomedical &amp; Embedded Systems Engineer" />
+		<meta property="og:description" content="Wearable brain-monitoring hardware, embedded firmware, optomechanics, and XR. M.S. Carnegie Mellon 2026. Available from January 2027." />
+		<meta property="og:image" content="https://marimboi3.github.io/images/V5_CWf-NIRS.png" />
+		<meta property="og:url" content="https://marimboi3.github.io/" />
+		<link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
+		<!-- Visitor analytics (GoatCounter: free, no cookies). Dashboard: https://marimboi3.goatcounter.com -->
+		<script data-goatcounter="https://marimboi3.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -20,9 +30,9 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="images/DSC07133-3.jpg" alt="" /></span>
+							<span class="image avatar48"><img src="images/DSC07133-3.jpg" alt="Alexis Valencia" /></span>
 							<h1 id="title">Alexis Valencia</h1>
-							<p>Biomedical & Interactive Systems</p>
+							<p>Biomedical Engineer</p>
 						</div>
 
 					<!-- Nav -->
@@ -30,7 +40,7 @@
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
 								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Projects</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
@@ -39,15 +49,16 @@
 
 				<div class="bottom">
 
+					<a href="assets/files/AlexisValencia_Resume.pdf" target="_blank" rel="noopener" class="resume-cta icon solid fa-file-pdf" data-goatcounter-click="resume-sidebar">Resume (PDF)</a>
+
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="assets/files/AlexisValencia_Resume.pdf" target="_blank" class="icon solid fa-file-pdf"><span class="label">Resume</span></a></li>
-							<li><a href="https://github.com/Marimboi3" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://www.linkedin.com/in/valenco-alexis/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://github.com/Marimboi3" target="_blank" rel="noopener" class="icon brands fa-github" title="GitHub"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/valenco-alexis/" target="_blank" rel="noopener" class="icon brands fa-linkedin" title="LinkedIn" data-goatcounter-click="linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:alexisv@andrew.cmu.edu" class="icon solid fa-envelope" title="Email" data-goatcounter-click="email"><span class="label">Email</span></a></li>
 						</ul>
 
-				</div> 
+				</div>
 
 			</div>
 
@@ -62,20 +73,23 @@
 								<h2 class="alt">
 									Hi! I'm <strong>Alexis Valencia</strong>.
 								</h2>
-								<p>
-									Computational biomedical engineer focused on embedded systems,
-									wearable devices, XR development, and interactive technologies.
+								<p class="tagline">
+									I build wearable biomedical hardware end to end: flexible PCBs, STM32 firmware,
+									and the signal processing that turns raw sensor data into a usable measurement.
 								</p>
+								<p class="availability">M.S. Carnegie Mellon '26 &bull; Seeking full-time roles from January 2027 &bull; Open to relocation</p>
 							</header>
 
-							<footer>
+							<footer class="button-row">
 								<a href="#portfolio" class="button scrolly">View Projects</a>
+								<a href="assets/files/AlexisValencia_Resume.pdf" target="_blank" rel="noopener" class="button ghost" data-goatcounter-click="resume-hero">Resume (PDF)</a>
+								<a href="#contact" class="button ghost scrolly">Contact Me</a>
 							</footer>
 
 						</div>
 					</section>
 
-					<!-- About Me -->
+				<!-- About Me -->
 					<section id="about" class="two">
 						<div class="container">
 
@@ -83,24 +97,51 @@
 								<h2>About Me</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/Pitt_Sunset.jpg" alt="" /></a>
+							<a href="images/Pitt_Sunset.jpg" class="image featured"><img src="images/Pitt_Sunset.jpg" alt="Pittsburgh at sunset" /></a>
 
 							<p>
-								I am a computational biomedical engineer focused on developing
-								interactive and human-centered technologies across embedded systems,
-								wearable biomedical devices, XR development, and rapid prototyping.
-
-								My work combines hardware, software, and design to create systems
-								that bridge engineering and human interaction. Across research and
-								development projects, I have worked on wearable neural imaging devices,
-								augmented and virtual reality learning environments, biomedical
-								instrumentation, embedded firmware, and physiological signal processing.
-
-								I am particularly interested in building technologies that make complex
-								systems more intuitive, immersive, and accessible - especially in areas
-								such as biomedical devices, educational technology, and interactive
-								computing.
+								I'm a computational biomedical engineer. I like owning the whole path from sensor to software:
+								picking the photodetector, laying out the board, writing the firmware, and proving the signal
+								holds up against a commercial reference. My M.S. thesis at Carnegie Mellon was
+								<a href="neuro-flux.html">Neuro-FLux</a>, a fully flexible wearable that monitors blood flow in the
+								brain, and I'm continuing that work as a Research Associate through December 2026.
+								Before that I built optomechanics for an award-winning OCT ear endoscope and interactive VR/AR systems at UC Riverside.
 							</p>
+
+							<div class="stats">
+								<div class="stat"><strong>36.14&nbsp;dB</strong><span>SNR from my wearable NIRS, vs. 34.49&nbsp;dB for a commercial system</span></div>
+								<div class="stat"><strong>2nd&nbsp;Prize</strong><span>NIH DEBUT Challenge with the OCTAVE endoscope team</span></div>
+								<div class="stat"><strong>50.9&rarr;78.8%</strong><span>F1-score on my EEG motor-imagery BCI decoder</span></div>
+								<div class="stat"><strong>60+</strong><span>students taught with my VR Enigma learning environment</span></div>
+							</div>
+
+							<div class="skill-groups">
+								<div>
+									<h4>Firmware &amp; Embedded</h4>
+									<ul class="chips"><li>C / C++</li><li>STM32 (ARM Cortex-M)</li><li>SPI &bull; I2C &bull; UART &bull; DMA</li><li>BLE</li><li>ADC sampling</li><li>Arduino</li></ul>
+								</div>
+								<div>
+									<h4>Hardware &amp; Sensing</h4>
+									<ul class="chips"><li>Flexible PCB (Altium)</li><li>Analog front-end tuning</li><li>CW-NIRS optics</li><li>Oscilloscope / logic analyzer</li><li>Soldering</li></ul>
+								</div>
+								<div>
+									<h4>Signal Processing &amp; ML</h4>
+									<ul class="chips"><li>MATLAB (OOP pipelines)</li><li>Python</li><li>EEG / BCI</li><li>CSP + Random Forest</li><li>Time-series analysis</li></ul>
+								</div>
+								<div>
+									<h4>Design &amp; XR</h4>
+									<ul class="chips"><li>Fusion 360</li><li>SLA / FDM printing</li><li>Optomechanics</li><li>Unity (C#)</li><li>Meta Quest &bull; Magic Leap 2</li></ul>
+								</div>
+							</div>
+
+							<h3>Experience</h3>
+							<ul class="timeline">
+								<li><span class="when">Jul 2026 &ndash; Dec 2026</span><span class="role">Research Associate &mdash; Biophotonics Lab, Carnegie Mellon</span><span class="what">Continuing Neuro-FLux: BLE wireless streaming and firmware refinement toward a field-deployable wearable.</span></li>
+								<li><span class="when">Jul 2024 &ndash; May 2026</span><span class="role">Graduate Research Assistant &mdash; Biophotonics Lab, Carnegie Mellon</span><span class="what">M.S. thesis: flexible PCB, STM32 firmware, and MATLAB pipelines for wearable brain monitoring.</span></li>
+								<li><span class="when">Mar 2023 &ndash; Jun 2024</span><span class="role">AR/VR Developer &mdash; XCITE Center, UC Riverside</span><span class="what">Led a team of three building a VR encryption lesson in Unity, demoed live to 60+ students.</span></li>
+								<li><span class="when">Jun 2023 &ndash; Jun 2024</span><span class="role">Undergraduate Researcher &mdash; Systems Neural Engineering Lab, UC Riverside</span><span class="what">Built an AR behavioral-task platform on Magic Leap 2 for a schizophrenia study.</span></li>
+								<li><span class="when">2024 &bull; 2026</span><span class="role">B.S. Bioengineering, UC Riverside &bull; M.S. Computational Biomedical Engineering, Carnegie Mellon</span></li>
+							</ul>
 
 						</div>
 					</section>
@@ -114,8 +155,8 @@
 							</header>
 
 							<p>
-								Two flagship engineering projects, plus my interactive VR/AR cipher machines and a gallery of standalone
-								CAD designs. Click any card to dive in.
+								Two flagship engineering projects, my interactive VR cipher machines, and a gallery of CAD work.
+								Each card opens a short case study.
 							</p>
 
 							<div class="row">
@@ -123,8 +164,10 @@
 									<article class="item">
 										<a href="neuro-flux.html" class="image fit"><img src="images/V5_CWf-NIRS.png" alt="Neuro-FLux wearable CW-NIRS device" /></a>
 										<header>
-											<h3>Neuro-FLux</h3>
-											<p>Flexible wearable CW-NIRS for continuous cerebral monitoring • Master's Thesis, CMU</p>
+											<h3><a href="neuro-flux.html">Neuro-FLux</a></h3>
+											<p>Fully flexible wearable that monitors blood flow in the brain &bull; M.S. thesis, CMU</p>
+											<p class="outcome">36.14&nbsp;dB SNR, on par with a commercial system</p>
+											<ul class="tags"><li>Flex PCB</li><li>STM32 firmware</li><li>BLE</li><li>MATLAB</li></ul>
 										</header>
 									</article>
 								</div>
@@ -132,8 +175,10 @@
 									<article class="item">
 										<a href="OCTAVE.html" class="image fit"><img src="images/OCTAVE_Design.png" alt="OCTAVE OCT endoscope" /></a>
 										<header>
-											<h3>OCTAVE</h3>
-											<p>Handheld OCT & vibrometry endoscope for middle-ear imaging • NIH DEBUT 2nd Place • UCR Senior Design</p>
+											<h3><a href="OCTAVE.html">OCTAVE</a></h3>
+											<p>Handheld OCT &amp; vibrometry endoscope for diagnosing hearing loss &bull; UCR senior design</p>
+											<p class="outcome">NIH DEBUT Challenge 2nd Prize</p>
+											<ul class="tags"><li>Optomechanics</li><li>Fusion 360</li><li>SLA printing</li><li>Optics alignment</li></ul>
 										</header>
 									</article>
 								</div>
@@ -141,19 +186,42 @@
 									<article class="item">
 										<a href="vr-ar.html" class="image fit"><img src="images/fusion360/Enigma Machine.png" alt="VR Enigma cipher machine" /></a>
 										<header>
-											<h3>XR Cipher Machines</h3>
-											<p>Interactive virtual Enigma & arcade-style cipher machine (Unity) • 3D models + encryption logic by me</p>
+											<h3><a href="vr-ar.html">XR Cipher Machines</a></h3>
+											<p>Interactive VR Enigma and arcade-style cipher machine, with 3D models you can rotate in the browser</p>
+											<p class="outcome">Demoed live to 60+ students</p>
+											<ul class="tags"><li>Unity / C#</li><li>Meta Quest</li><li>3D modeling</li><li>Team lead</li></ul>
 										</header>
 									</article>
 								</div>
 								<div class="col-6 col-12-mobile">
 									<article class="item">
-										<a href="fusion360.html" class="image fit"><img src="images/fusion360/V2.1-Full-Assembly.png" alt="Fusion 360 CAD designs" /></a>
+										<a href="fusion360.html" class="image fit"><img src="images/fusion360/Skin Light Absorption Detector Summer Project Open.png" alt="Fusion 360 design: skin light-absorption detector enclosure" /></a>
 										<header>
-											<h3>Fusion 360 Designs</h3>
-											<p>Gallery of standalone CAD work — optical holders, lab hardware, and custom prints</p>
+											<h3><a href="fusion360.html">Fusion 360 Designs</a></h3>
+											<p>Gallery of standalone CAD work: optical holders, lab hardware, and custom prints</p>
+											<p class="outcome">Designed, printed, and iterated</p>
+											<ul class="tags"><li>CAD</li><li>Rapid prototyping</li><li>FDM / SLA</li></ul>
 										</header>
 									</article>
+								</div>
+							</div>
+
+							<h3>Smaller Projects</h3>
+							<div class="mini-projects">
+								<div class="mini">
+									<h4>EEG Motor-Imagery BCI Decoder</h4>
+									<p class="meta">CMU course project &bull; Fall 2025 &bull; Python</p>
+									<p>Ran EEG motor-imagery experiments, then built a bandpass + Common Spatial Patterns pipeline and a Random Forest classifier. F1-score rose from 50.9% to 78.8%.</p>
+								</div>
+								<div class="mini">
+									<h4>AR Platform for a Schizophrenia Study</h4>
+									<p class="meta">UCR Systems Neural Engineering Lab &bull; 2023&ndash;24 &bull; Unity / C#</p>
+									<p>Led development of AR behavioral tasks on Magic Leap 2, using hand tracking so participants could complete tasks naturally.</p>
+								</div>
+								<div class="mini">
+									<h4>3D Print Pricing Calculator</h4>
+									<p class="meta">Personal project &bull; C++</p>
+									<p>Console tool that turns print time and filament use into minimum and recommended prices, with saved settings and CSV job logs for a small print business.</p>
 								</div>
 							</div>
 
@@ -168,17 +236,29 @@
 								<h2>Contact</h2>
 							</header>
 
-							<p>Want to contact me? Send me a message and I'll reply as soon as I can.</p>
+							<p>Hiring for embedded, biomedical device, or neurotech roles? I'd love to hear from you.
+							Email me directly or send a message below. It goes straight to my inbox.</p>
 
-							<form method="post" action="#">
+							<div class="contact-direct">
+								<a href="mailto:alexisv@andrew.cmu.edu" class="button icon solid fa-envelope" data-goatcounter-click="email-contact">&nbsp;alexisv@andrew.cmu.edu</a>
+								<a href="https://www.linkedin.com/in/valenco-alexis/" target="_blank" rel="noopener" class="button icon brands fa-linkedin" data-goatcounter-click="linkedin-contact">&nbsp;LinkedIn</a>
+							</div>
+
+							<!-- Messages are delivered by FormSubmit (formsubmit.co). The first submission sends a one-time activation email. -->
+							<form id="contact-form" method="post" action="https://formsubmit.co/alexisv@andrew.cmu.edu">
+								<input type="hidden" name="_subject" value="New message from your portfolio site" />
+								<input type="hidden" name="_template" value="table" />
+								<input type="hidden" name="_next" value="https://marimboi3.github.io/?sent=1#contact" />
+								<input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" />
 								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" required /></div>
+									<div class="col-6 col-12-mobile"><input type="email" name="email" placeholder="Email" required /></div>
 									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
+										<textarea name="message" placeholder="Message" required></textarea>
 									</div>
 									<div class="col-12">
 										<input type="submit" value="Send Message" />
+										<p id="form-status" role="status" aria-live="polite"></p>
 									</div>
 								</div>
 							</form>
@@ -193,7 +273,7 @@
 
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Alexis Valencia. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 			</div>
@@ -206,6 +286,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/contact.js"></script>
 
 	</body>
 </html>

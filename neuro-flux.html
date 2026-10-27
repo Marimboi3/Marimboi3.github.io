@@ -9,7 +9,7 @@
 		<title>Neuro-FLux | Alexis Valencia Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="Neuro-FLux: a flexible wearable CW-NIRS device for continuous cerebral hemodynamic monitoring (CMU Masters Thesis)." />
+		<meta name="description" content="Neuro-FLux: a compact wearable CW-NIRS device for continuous cerebral hemodynamic monitoring (CMU M.S. thesis and ongoing research)." />
 		<link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
@@ -66,7 +66,7 @@
 							<header>
 								<h2 class="alt">Neuro-FLux</h2>
 								<p>
-									A fully flexible, wearable brain-monitoring device that tracks cerebral blood flow in real time<br />
+									A compact, wearable brain-monitoring device that tracks cerebral blood flow in real time<br />
 									&bull; Master's Thesis Research &bull; Carnegie Mellon University &bull; Advisor: Dr. Jana Kainerstorfer
 								</p>
 							</header>
@@ -86,14 +86,17 @@
 								<strong>Latest update (July&ndash;December 2026)</strong>
 								After finishing my M.S. in May 2026, I stayed on in the Biophotonics Lab as a Research Associate to keep
 								moving Neuro-FLux forward. I integrated Bluetooth Low Energy (BLE) wireless data streaming, and I'm refining the
-								firmware with my Ph.D. mentor toward a field-deployable wearable.
+								firmware with my Ph.D. mentor toward a field-deployable wearable. On the hardware side, I moved the design from a
+								single flexible PCB to rigid boards joined by a flexible ribbon cable, so it still conforms to the head. The next
+								revision shrinks the sensor to <strong>20 &times; 25 mm</strong>; it's designed and waiting on fabrication.
 							</div>
 							<p>
 								Neuro-FLux is a wearable near-infrared spectroscopy (NIRS) device that measures blood oxygenation and flow in the
 								brain continuously. Existing tools (EEG, fMRI) can't do this in everyday life,
-								and earlier wearables lost signal the moment the wearer moved. Neuro-FLux solves that by putting
+								and earlier wearables lost signal the moment the wearer moved. My thesis prototype tackled that by putting
 								the optics on an ultra-thin flexible printed circuit board (PCB) that bends to the shape of the head, keeping
-								firm skin contact and clean optical coupling even during motion.
+								firm skin contact and clean optical coupling even during motion. Later revisions keep that fit with rigid
+								boards joined by a flexible ribbon cable.
 							</p>
 
 							<div class="row">
@@ -102,14 +105,14 @@
 									<p>
 										Continuous cerebral monitoring helps catch neurological problems early and opens the door to
 										personalized brain health. Neuro-FLux showed that research-grade optical measurement is possible
-										in a comfortable, flexible patch — not just a bulky lab rig.
+										in a small, comfortable wearable — not just a bulky lab rig.
 									</p>
 								</div>
 								<div class="col-6 col-12-mobile">
 									<h3>My Role</h3>
 									<p>
 										I owned the electrical and embedded stack. I selected the photodetector and tuned the analog front-end,
-										designed the flexible PCB in Altium, and wrote the STM32 firmware in C (SPI + DMA sampling, I2C/UART, BLE streaming).
+										designed the PCBs in Altium (a flexible board for the thesis, ribbon-linked rigid boards since), and wrote the STM32 firmware in C (SPI + DMA sampling, I2C/UART, BLE streaming).
 										I also built two object-oriented MATLAB pipelines, ran the validation against commercial systems, and wrote the thesis.
 										When timing or signal quality broke, I used an oscilloscope and logic analyzer to tell hardware faults from firmware bugs.
 									</p>
@@ -122,7 +125,7 @@
 							<div class="row">
 								<div class="col-6 col-12-mobile">
 									<ul class="alt">
-										<li><strong>36.14 dB SNR</strong> at heart rate, on par with a commercial CW-NIRS system (34.49 dB) under the same conditions</li>
+										<li><strong>36.14 dB SNR</strong> at heart rate (thesis prototype), on par with a commercial CW-NIRS system (34.49 dB) under the same conditions</li>
 										<li><strong>100 Hz</strong> stable operation with optimized acquisition timing</li>
 										<li>~2 dB SNR gain from sensor interfacing and front-end tuning</li>
 										<li>Agreement with a clinical FD-NIRS reference during breathing/hyperventilation tasks</li>
@@ -130,7 +133,8 @@
 								</div>
 								<div class="col-6 col-12-mobile">
 									<ul class="alt">
-										<li>Fully flexible form factor: <strong>56.6 &times; 24.4 mm</strong>, ~0.3 mm thick polyimide board</li>
+										<li>Thesis prototype: <strong>56.6 &times; 24.4 mm</strong>, ~0.3 mm thick flexible polyimide board</li>
+										<li>Next revision: <strong>20 &times; 25 mm</strong> ribbon-linked rigid boards (designed, awaiting fabrication)</li>
 										<li>TPU 3D-printed enclosure + silicone skin interface for comfort and stable coupling</li>
 										<li>Real-time tracking of heart-rate-driven brain blood-flow changes</li>
 										<li><strong>BLE wireless streaming</strong> integrated (2026)</li>
@@ -200,7 +204,7 @@
 								<div class="col-4 col-6 col-12-mobile">
 									<h4>Hardware & Embedded</h4>
 									<ul class="alt">
-										<li>Flexible PCB design (4-layer, Altium)</li>
+										<li>Rigid &amp; flex PCB design (Altium)</li>
 										<li>STM32 firmware (C): SPI + DMA, I2C, UART</li>
 										<li>BLE wireless streaming</li>
 										<li>Analog front-end (MAX86171)</li>
@@ -219,7 +223,7 @@
 									<h4>Mechanical & Fabrication</h4>
 									<ul class="alt">
 										<li>Fusion 360 CAD</li>
-										<li>Flexible PCB assembly</li>
+										<li>Multi-board assembly (ribbon interconnect)</li>
 										<li>TPU 3D printing</li>
 										<li>Silicone molding</li>
 									</ul>
